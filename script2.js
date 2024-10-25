@@ -15,11 +15,13 @@ function winnerCheck(){
         (tic[2] !==null && tic[2]==tic[4] && tic[4]==tic[6])  
     ){
         //document.write('Winner is ',current_player);
-        document.write(`winner is ${current_player}`);
+        document.write(`winner is ${current_player} <br> Reload to Start Again...`);
+        
         return;
     }
     if(!tic.some((e)=>e===null)){
-        document.write('!!!!!!!!DRAW.......MATCH!!!!!!!!')
+        document.write("!!!!!!!!DRAW.......MATCH!!!!!!!! <br> <br> <br> Reload to Start Again");
+    
         return;
     }
 
