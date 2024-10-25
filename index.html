@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THis is website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            padding-left: 50px;
+            padding-right: 50px;
+            width: fit-content;
+            justify-items: center;
+            display:flexbox;
+            
+            align-items: center;
+            align-content: space-between;
+            border-radius: 2px;
+            color: beige;
+            
+            position: absolute;
+        }
+        .row{
+            display:flex ;
+        }
+        .col{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            font-size: large;
+            border: 2px solid rgb(84, 170, 223);
+            cursor: pointer;
+        }
+        .grid{
+            top: 300px;
+            height: 300px;
+            padding-top: 100px;
+            padding-left: 250px;
+        }
+        .win{
+            top: 300px;
+            height: 300px;
+            padding-top: 100px;
+            padding-left: 250px;
+        }
+    </style>
+    
+</head>
+<body style="background-color: black;color: aquamarine;", class="container">
+    <h1>This is a tic tac toe game</h1>
+    
+    <div class="grid">
+        <div class="row">
+            <div onclick="handleClick(this)" id="0" class="col"></div>
+            <div onclick="handleClick(this)" id="1" class="col"></div>
+            <div onclick="handleClick(this)" id="2" class="col"></div>
+        </div>
+        <div class="row">
+            <div onclick="handleClick(this)" id="3" class="col"></div>
+            <div onclick="handleClick(this)" id="4" class="col"></div>
+            <div onclick="handleClick(this)" id="5" class="col"></div>
+        </div>
+        <div class="row">
+            <div onclick="handleClick(this)" id="6" class="col"></div>
+            <div onclick="handleClick(this)" id="7" class="col"></div>
+            <div onclick="handleClick(this)" id="8" class="col"></div>
+        </div>
+        
+        
+        
+    </div>
+   
+    
+    <script src="script2.js"></script>
+</body>
+</html>
