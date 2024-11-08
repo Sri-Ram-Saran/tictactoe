@@ -9,19 +9,11 @@
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        h2{
+            text-align: center;
+        }
         h1{
-            padding-left: 100px;
-            padding-right: 50px;
-            width: fit-content;
-            justify-items: center;
-            display:flexbox;
-            
-            align-items: center;
-            align-content: space-between;
-            border-radius: 2px;
-            color: beige;
-            
-            position: absolute;
+            text-align: center;
         }
         .row{
             display:flex ;
@@ -37,24 +29,34 @@
             cursor: pointer;
         }
         .grid{
-            top: 300px;
+            top: 10px;
             height: 300px;
-            padding-top: 150px;
-            padding-left: 150px;
+            padding-top: 30px;
+            padding-left: 20px;
+            
+
         }
         .win{
             top: 300px;
             height: 300px;
             padding-top: 100px;
-            padding-left: 150px;
+            padding-left: 100px;
+        }
+        .hello{
+            display: flex;
+            justify-content:center ;
+            
+            
         }
     </style>
     
 </head>
 <body style="background-color: black;color: aquamarine;", class="container">
     <h1>This is a tic tac toe game</h1>
-    
+    <div class="hello">
+        
     <div class="grid">
+        
         <div class="row">
             <div onclick="handleClick(this)" id="0" class="col"></div>
             <div onclick="handleClick(this)" id="1" class="col"></div>
@@ -70,11 +72,11 @@
             <div onclick="handleClick(this)" id="7" class="col"></div>
             <div onclick="handleClick(this)" id="8" class="col"></div>
         </div>
-        <h2>Reload the site for new match</h2>
-        
-        
         
     </div>
+    
+    </div>
+    <h2>Reload the site for new match</h2>
    
     
     <script src="script2.js"></script>
